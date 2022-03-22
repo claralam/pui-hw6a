@@ -129,13 +129,13 @@ h3 {
     font-weight: 400;
 }
 
-table {
+#upcoming-summary {
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
     width: 100%
 }
 
-td {
+#upcoming-summary td {
     float: left;
 }
 
@@ -287,4 +287,30 @@ iframe {
     left: 200px;
     width: 500px;
     text-align: left;
+}
+
+/* Past COVID Results Page */
+
+.checkmark {
+    width: 20px;
+}
+
+#covid-results {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#covid-results td, #covid-results th {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+#covid-results tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#covid-results td {
+    padding: 10px;
 }

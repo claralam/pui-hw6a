@@ -10,6 +10,9 @@
     <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
 
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
 
@@ -46,40 +49,40 @@
                         <img src="images/left_button.png" class="left-right-buttons" alt="left arrow">
                         <p>February 2022</p>
                         <img src="images/right_button.png" class="left-right-buttons" alt="right arrow">
-                        <form id="choose-appt-date">
-                            <input type="radio" id="date1" name="appt-date" value="1 Tue">
+                        <form id="choose-appt-date" onclick="update_chosen_appt_date()">
+                            <input type="radio" id="date1" name="appt-date" value="Tuesday, February 1, 2022">
                                 <label for="date1">1<br><br>Tue</label>
-                            <input type="radio" id="date2" name="appt-date" value="2 Wed">
+                            <input type="radio" id="date2" name="appt-date" value="Wednesday, February 2, 2022">
                                 <label for="date2">2<br><br>Wed</label>
-                            <input type="radio" id="date3" name="appt-date" value="3 Thu">
+                            <input type="radio" id="date3" name="appt-date" value="Thursday, February 3, 2022">
                                 <label for="date3">3<br><br>Thu</label>
-                            <input type="radio" id="date4" name="appt-date" value="4 Fri">
+                            <input type="radio" id="date4" name="appt-date" value="Friday, February 4, 2022">
                                 <label for="date4">4<br><br>Fri</label>
-                            <input type="radio" id="date5" name="appt-date" value="5 Sat">
+                            <input type="radio" id="date5" name="appt-date" value="Saturday, February 5, 2022">
                                 <label for="date5">5<br><br>Sat</label>
-                            <input type="radio" id="date6" name="appt-date" value="6 Sun">
+                            <input type="radio" id="date6" name="appt-date" value="Sunday, February 6, 2022">
                                 <label for="date6">6<br><br>Sun</label>
-                            <input type="radio" id="date7" name="appt-date" value="7 Mon">
+                            <input type="radio" id="date7" name="appt-date" value="Monday, February 7, 2022">
                                 <label for="date7">7<br><br>Mon</label>
                         </form>
                     </div>
                     <!-- Selecting a time -->
-                    <form id="choose-appt-time">
+                    <form id="choose-appt-time" onclick="update_chosen_appt_time()">
                         <!-- Left side of times -->
                         <div id="time-group1">
-                            <input type="radio" id="time1" name="appt-time" value="10:00AM">
+                            <input type="radio" id="time1" name="appt-time" value="10:00 AM">
                                 <label for="time1">10:00 AM</label> <br>
-                            <input type="radio" id="time2" name="appt-time" value="10:05AM">
+                            <input type="radio" id="time2" name="appt-time" value="10:05 AM">
                                 <label for="time2">10:05 AM</label> <br>
-                            <input type="radio" id="time3" name="appt-time" value="10:10AM">
+                            <input type="radio" id="time3" name="appt-time" value="10:10 AM">
                                 <label for="time3">10:10 AM</label> <br>
-                            <input type="radio" id="time4" name="appt-time" value="10:15AM">
+                            <input type="radio" id="time4" name="appt-time" value="10:15 AM">
                                 <label for="time5">10:15 AM</label> <br>
-                            <input type="radio" id="time5" name="appt-time" value="10:20AM">
+                            <input type="radio" id="time5" name="appt-time" value="10:20 AM">
                                 <label for="time5">10:20 AM</label> <br>
-                            <input type="radio" id="time6" name="appt-time" value="10:25AM">
+                            <input type="radio" id="time6" name="appt-time" value="10:25 AM">
                                 <label for="time6">10:25 AM</label> <br>
-                            <input type="radio" id="time7" name="appt-time" value="10:30AM">
+                            <input type="radio" id="time7" name="appt-time" value="10:30 AM">
                                 <label for="time7">10:30 AM</label> <br>
                         </div>
                         <!-- Right side of times -->
@@ -107,8 +110,8 @@
             <div id="right-half">
                 <!-- Confirmation of selected choices -->
                 <p><strong>Appointment:</strong> <span class="appt-info-right">Tartan Testing (Asymptomatic COVID-19 Testing)</span></p><br>
-                <p><strong>Date:</strong> <span class="appt-info-right">Tuesday, February 1, 2022</span></p><br>
-                <p><strong>Time:</strong> <span class="appt-info-right">10:05 AM</span></p><br>
+                <p><strong>Date:</strong> <span class="appt-info-right" id="appt-date">Tuesday, February 1, 2022</span></p><br>
+                <p><strong>Time:</strong> <span class="appt-info-right" id="appt-time">10:05 AM</span></p><br>
                 <p><strong>Location:</strong> <span class="appt-info-right">TCS Hall (Tata Consultancy Services</span></p><br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.377367465818!2d-79.94954334903956!3d40.4447839617555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f319d3870ad1%3A0x79d45fd59091764a!2sTCS%20Hall!5e0!3m2!1sen!2sus!4v1646093544694!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>

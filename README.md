@@ -1,4 +1,4 @@
-# pui-hw5
+# pui-hw6
 
 1. Home page: index.html
 
@@ -15,3 +15,6 @@ Additional work:
 Added confirm-appt.html, appt-confirmation.html as additional confirmation pages
 for previous scheduling pages.
 I also created a login page.
+
+Icons used:
+https://www.flaticon.com/free-icons/check Icons created by Maxim Basinski Premium
