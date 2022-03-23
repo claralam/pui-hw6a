@@ -18,7 +18,7 @@ function update_chosen_appt_time() {
 }
 
 // For modals, opening popups
-
+// Source: https://www.youtube.com/watch?v=MBaw_6cPmAw&ab_channel=WebDevSimplified
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')

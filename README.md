@@ -1,5 +1,7 @@
 # pui-hw6
 
+Tartan Testing Website
+
 1. Home page: index.html
 
 2. Product browsing page: loggedin-home.html
@@ -10,11 +12,6 @@ the website.
 3. Product detail page: appt-type.html; appt-time.html
 Since there are no products, I made the "Schedule a COVID-19 Test" the "product" and
 created the pages where a user would schedule a test as the product detail pages.
-
-Additional work:
-Added confirm-appt.html, appt-confirmation.html as additional confirmation pages
-for previous scheduling pages.
-I also created a login page.
 
 Icons used:
 https://www.flaticon.com/free-icons/check Icons created by Maxim Basinski Premium
