@@ -297,20 +297,61 @@ iframe {
 
 #covid-results {
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin: 5% 10%;
 }
   
 #covid-results td, #covid-results th {
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 10px;
 }
   
 #covid-results tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-#covid-results td {
-    padding: 10px;
+#button-col {
+    display: flex;
+    justify-content: right;
+}
+
+/* Source: https://www.youtube.com/watch?v=MBaw_6cPmAw&ab_channel=WebDevSimplified */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 50px;
+    z-index: 10;
+    background-color: white;
+    width: 75%;
+    height: 60%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-body {
+    padding: 20px 20px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }

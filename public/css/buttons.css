@@ -64,3 +64,21 @@
 .left-right-buttons {
     width: 15px;
 }
+
+.popup-button {
+    background-color: #79A5FC;
+    font-size: 15px;
+    padding: 6px 20px;
+    border: none;
+}
+
+#popup-back-button {
+    margin: 10px;
+    background-color: #9B9B9B;
+    border: none;
+    float: right;
+}
+
+.popup-button:hover {
+    cursor: pointer;
+}
