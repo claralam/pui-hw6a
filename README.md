@@ -3,6 +3,7 @@
 Tartan Testing Website
 Clara Lam
 
+Screen Resolution: 3840 x 2160
 
 1. Home Page (not logged in): To view the bulk of the website, please go to the login page.
 2. Login Page: To log in, press the "Login" button
